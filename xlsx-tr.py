@@ -1,5 +1,6 @@
-import xlsxwriter
+import xlsxwriter #xlsxwriter kaynağımızı projemize ekliyoruz.
 
+#değişkenleri ekliyoruz(isteğe bağlı)
 isim = str(input("Adınızı Giriniz : "))
 firma = str(input("Firma Adınızı Giriniz : "))
 adres = str(input("Adresinizi Giriniz : "))
@@ -8,7 +9,7 @@ adet = int(input("Ürününüzün Adetini Giriniz : "))
 birimFiyat = int(input("Ürününüzün Birim Fiyatını Giriniz : "))
 tarih = str(input("Tarihi Giriniz : "))
 
-
+#xlsxwriter 
 exceldosyaadi = xlsxwriter.Workbook("excelsayfam.xlsx")
 excelsayfaadi = exceldosyaadi.add_worksheet("orneksayfa")
 
